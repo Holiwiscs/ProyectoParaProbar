@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Restablecer</ion-title>
+    <ion-buttons>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Restablecer Contraseña</ion-card-title>
+    </ion-card-header>
+      <div class="container mt-5">
+        <ion-card-content>
+          <h3 class="card-title text-center" >Por favor ingresa tu correo electronico</h3>
+          <ion-input [(ngModel)]="correo"  label="Email: "></ion-input>
+          <ion-button expand="block" (click)="restablecerContrasenia()">Enviar Correo</ion-button>
+        </ion-card-content>
+      </div>
+  </ion-card>  
+</ion-content>

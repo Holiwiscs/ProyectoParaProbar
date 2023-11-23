@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perfil de usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let i of userFilter">
+    <h3>
+      {{i.correo}} 
+      <br>
+      {{i.nombre}}  
+      <br>
+      {{i.apellido}}
+      <br> 
+      {{i.region}}
+      <br> 
+      {{i.comuna}}
+      <br>
+      {{i.id}}
+      <br> 
+      {{i.id}}
+    </h3>
+  </ion-card>
+  <ion-card *ngFor="let i of regionFilter">
+    <h3>
+      {{i.nombre}}
+    </h3>
+   
+  </ion-card>
+</ion-content>
